@@ -22,7 +22,8 @@ db = Chroma.from_documents(
     persist_directory="emb"
 )
  
-results = db.similarity_search("english language")
+results = db.similarity_search("English language")
 for result in results:
     print("\n")
     print (result.page_content)
+    
